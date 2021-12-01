@@ -122,12 +122,19 @@ table{
   height: auto;
   width: 90vw;
 }
+#image10{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 350px;
+}
 p{
   font-family: Arial, Helvetica, sans-serif;
   color:white;
   padding: 5px;
   margin: 15px;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 td{
   font-family: Arial, Helvetica, sans-serif;
@@ -144,6 +151,7 @@ tr{
   justify-content: center;
   flex-direction: column;
   color: yellow;
+  margin-bottom: 15px;
 }
 
 #trophies{
