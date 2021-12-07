@@ -56,13 +56,19 @@ a.skip:focus{
 #contact_title{
   color: red;
   text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
 }
 .form{
   display: grid;
   grid-template-columns: 1fr;
   margin: auto;
   text-align: center;
-  color: red
+  color: red;
+}
+input{
+  margin-bottom: 15px;
+  width: 40%;
 }
 footer{
   display: block;
@@ -103,10 +109,8 @@ table{
   margin-right: auto;
   }
 #gallery{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
+  text-align: center;
   color: yellow;
 }
 .gallery{
@@ -192,9 +196,6 @@ tr{
     width: 500px;
     border: 10px solid white;
   }
-  .gallery > img:nth-child(even){
-    border: 10px solid white;
-  }
   #biography{
     font-size: 32px;
   }
@@ -209,5 +210,65 @@ tr{
   }
   #gallery{
     font-size: 32px;
+  }
+  .form{
+  border: 5px solid yellow;
+  }
+  input{
+    margin-bottom: 15px;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1100px){
+  @keyframes icon{
+    from{width: 50px;}
+    to{width: 120px;}
+   
+}  
+  #icon{
+    animation-name: icon;
+    animation-duration: 3s;
+    max-width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+  }
+  #ball{
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+  .text1{
+    grid-column: 1 / span 3;
+  }
+  .text2{
+    grid-column: 1 / span 3;
+  }
+  .text3{
+    grid-column: 1 / span 3;
+  }
+  .text4{
+    grid-column: 1 / span 3;
+  }
+  .nav_links a{
+    margin: 60px;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce){
+  #icon{
+    animation: none;
+  }
+}
+@media screen and (max-width: 1100px){
+  #icon{
+    display: none;
+  }
+  #ball{
+    display: none;
   }
 }
