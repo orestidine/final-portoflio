@@ -148,6 +148,9 @@ tr{
   font-family: Arial, Helvetica, sans-serif;
   color: yellow;
 }
+tr:hover{
+  border-bottom: 2px dashed white;
+}
 #biography{
   display:flex;
   flex-wrap: wrap;
@@ -271,4 +274,7 @@ tr{
   .ball{
     display: none;
   }
+}
+table tr:hover{
+  background:#373737;
 }
